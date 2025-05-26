@@ -78,12 +78,36 @@ Implementing a data science project from data collection to model deployment in 
 ✅ Tools: pickle, joblib, Flask, FastAPI
 
 ## 10. Deployment to Cloud
-Goal: Make your model accessible to end users.
+**Goal:** Make your model accessible to end users.
 
 ✅ Cloud Platforms:
 - AWS (SageMaker, EC2, Lambda, S3)
 - GCP (Vertex AI, Cloud Run, Cloud Storage)
 - Azure (Azure ML)
+
+✅ Steps:
+1. Create API Endpoint:
+- Use Flask/FastAPI to create a web server
+2. Dockerize the Application (optional but recommended)
+- Write a Dockerfile
+- Build and test the image locally
+3. Deploy to Cloud:
+- Upload model and script
+- Use a compute service (e.g., AWS EC2, GCP Cloud Run) Or use MLOps platform (e.g., AWS SageMaker)
+4. Set Up CI/CD (optional)
+- Automate builds and deployments
+
+## 11. Monitoring and Maintenance
+**Goal:** Ensure long-term reliability.
+- Track model performance
+- Watch for data drift
+- Retrain with new data
+
+✅ Tools: Prometheus, Grafana, MLflow, Airflow, AWS CloudWatch
+
+
+
+
   
 project_name/
 ├── README.md
