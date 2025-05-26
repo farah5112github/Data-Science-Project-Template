@@ -86,16 +86,10 @@ Implementing a data science project from data collection to model deployment in 
 - Azure (Azure ML)
 
 ✅ Steps:
-1. Create API Endpoint:
-- Use Flask/FastAPI to create a web server
-2. Dockerize the Application (optional but recommended)
-- Write a Dockerfile
-- Build and test the image locally
-3. Deploy to Cloud:
-- Upload model and script
-- Use a compute service (e.g., AWS EC2, GCP Cloud Run) Or use MLOps platform (e.g., AWS SageMaker)
-4. Set Up CI/CD (optional)
-- Automate builds and deployments
+1. **Create API Endpoint:** Use Flask/FastAPI to create a web server
+2. **Dockerize the Application (optional but recommended):** Write a Dockerfile, Build and test the image locally
+3. **Deploy to Cloud:** Upload model and script, Use a compute service (e.g., AWS EC2, GCP Cloud Run) Or use MLOps platform (e.g., AWS SageMaker)
+4. **Set Up CI/CD (optional):** Automate builds and deployments
 
 ## 11. Monitoring and Maintenance
 **Goal:** Ensure long-term reliability.
@@ -105,10 +99,16 @@ Implementing a data science project from data collection to model deployment in 
 
 ✅ Tools: Prometheus, Grafana, MLflow, Airflow, AWS CloudWatch
 
+## BONUS: Tools Stack Summary
+| Phase           | Tools                                   |
+| --------------- | --------------------------------------- |
+| Data Collection | `requests`, `APIs`, `SQL`, `BeautifulSoup`  |
+| Cleaning & EDA  | `pandas`, `seaborn`, `matplotlib`       |
+| Modeling        | `scikit-learn`, `XGBoost`, `TensorFlow` |
+| Deployment      | `Flask`, `Docker`, `AWS/GCP/Azure`      |
+| Monitoring      | `MLflow`, `Prometheus`, `Airflow`       |
 
 
-
-  
 project_name/
 ├── README.md
 ├── data/
